@@ -5,11 +5,11 @@
 @layer base{
     :root{
         --color-bg-main: #fff;
-        --color-bg-main-hover: #f3f1fe;
+        --color-bg-main-hover: #e5e7eb;
         --color-text-main: #373e4b;
         --color-text-main-muted: #666666;
-        --color-text-active: #4834f7;   
-        --color-text-active-dark: #481ff9;
+        --color-text-active: #3466f6;   
+        --color-text-active-dark: #3446f6;
         --color-icon-main: #7f7f7f;
         --color-text-green: #10b99e;
         --color-social-fb: #3b5998;

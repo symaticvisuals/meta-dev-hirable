@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Fira Sans", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
       serif: ["Merriweather", "sans-serif"],
     },
     extend: {
@@ -23,7 +23,7 @@ module.exports = {
         google: "var(--color-social-google)",
         apple: "var(--color-social-apple)",
         github: "var(--color-social-github)",
-        
+
       },
       backgroundColor: {
         main: "var(--color-bg-main)",

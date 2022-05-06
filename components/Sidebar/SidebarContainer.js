@@ -1,6 +1,6 @@
 import React from "react";
-import { CgFeed, CgDetailsMore } from "react-icons/cg";
-import { MdDrafts, MdExplore } from "react-icons/md";
+import {  CgDetailsMore } from "react-icons/cg";
+import { MdDrafts } from "react-icons/md";
 import {
   BsBookmarkFill,
   BsSearch,
@@ -9,6 +9,10 @@ import {
   BsGithub,
   BsLinkedin,
   BsFacebook,
+  BsNewspaper,
+  BsCompass,
+  BsBookmarks,
+  BsPen,
 } from "react-icons/bs";
 import SidebarNavigation from "./SidebarNavigation";
 import SidebarTags from "./SidebarTags";
@@ -20,22 +24,22 @@ function SidebarContainer() {
       {
         name: "My Feed",
         link: "/my-feed",
-        icon: <CgFeed />,
+        icon: <BsNewspaper />,
       },
       {
         name: "Drafts",
         link: "/drafts",
-        icon: <MdDrafts />,
+        icon: <BsPen />,
       },
       {
         name: "Bookmarks",
         link: "/bookmarks",
-        icon: <BsBookmarkFill />,
+        icon: <BsBookmarks />,
       },
       {
         name: "Explore",
         link: "/explore",
-        icon: <MdExplore />,
+        icon: <BsCompass />,
       },
       {
         name: "Search",
@@ -136,7 +140,7 @@ function SidebarContainer() {
   ];
   return (
     <div className="flex">
-      <div className="w-[14vw]">
+      <div className="w-[240px] px-3 mt-4">
         <div className="mb-2">
           {sidebar.navigation.map((nav) => (
             <div className="">
@@ -146,7 +150,7 @@ function SidebarContainer() {
         </div>
         <hr />
         <div className="">
-          <h3 className="text-sm uppercase mt-2 font-sans font-medium pl-2">
+          <h3 className="text-xs uppercase text-main-muted mt-2 font-sans font-medium pl-2">
             Trending Tags
           </h3>
           {sidebar.tags.map((tag) => (
